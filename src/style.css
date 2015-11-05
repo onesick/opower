@@ -114,3 +114,22 @@ body {
     margin: 0;
 }
 /* end #nav-main ul li a */
+
+#footer-container {
+  background-image: none;
+  background-position: top right;
+  background-repeat: no-repeat;
+  padding: 0;
+  margin: 0;
+}
+#footer {
+  border-top: none;
+}
+small, .small {
+  font-size: 12px;
+  line-height: 12px;
+}
+#footer #copyright {
+  float: right;
+  padding-top: 20px;
+}
