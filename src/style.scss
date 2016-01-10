@@ -1,3 +1,8 @@
+/*one of the requirement for not displaying until mouse over*/
+.sub-nav{
+  display: none;
+}
+
 /* .container */
 .container {
     width: 980px;
@@ -66,6 +71,14 @@ ul, dl {
 }
 /* end #nav-main ul */
 
+// scss style
+
+#header #nav-main{
+  ul li{
+
+  }
+}
+
 /* #nav-man ul li */
 #header #nav-main ul li {
     position: relative;
@@ -78,6 +91,10 @@ ul, dl {
 /* #nav-man ul li a */
 #header #nav-main ul li.active a {
     color: #fff;
+}
+/*when an active item is hovered, displays sub menu*/
+#header #nav-main ul li.active a:hover + .sub-nav{
+    display: block;
 }
 #header #nav-main ul li a.first {
     border-left: none;

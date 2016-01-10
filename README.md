@@ -10,14 +10,17 @@ Please clone this repository and deliver your solutions in an archive format of 
 
 1. Download http://www.google-analytics.com/ga.js to a file named ga_local.js on your machine.
    1. How did you accomplish this?
+   - I went to the URL, saved the code as ga_local.js to the location I wanted.
    1. This file is full of a lot of gibberish. Are there more instances of the character a or g? How many of each? How did you determine this?
+   -There are 519 instances of a being used in the file. I searched for "a." and I had 519 results returned.
    1. Google has sensibly chosen size over readability for this file. Suppose that for your local copy, however, you wanted to rename the variables a, b, c, and g to apple, banana, carrot, and grapefruit. How would you do this?
-
+   -In the text editor, I would search variables such as "a." and replace them all with "apple."
 
 1. Use the HTML and CSS files in the src folder for the following tasks. Make changes to the HTML and CSS files as needed. Attach your modified versions of the code with your answer sheet when returning it to Opower.
    1. The HTML file doesn’t have any styling right now. Add a snippet of code to navigation.html to load the style.css file.
    1. The navigation is boring. Add one or two subnavigation tabs below the active tab which appear only when you hover over the main tab. Change the HTML or CSS files as needed.
    1. There are some bits of CSS that are currently unused between these two files. How would you find this unused code? And can you identify the who made the commit?
+   -I look at the CSS, and footer related elements are non-existing yet. So I look at the commit history, and found out that yogi.bear has added these lines.
    1. Opower likes to use SCSS to organize our styling. Optimize the CSS by converting it to SCSS and taking advantage of some of the SCSS features. Note: Since SCSS needs to be compiled before being used in HTML, don’t worry about the link you added to load style.css not working anymore.
 
 
