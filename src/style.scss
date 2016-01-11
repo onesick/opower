@@ -75,34 +75,20 @@ ul, dl {
 
 #header #nav-main{
   ul li{
-
-  }
-}
-
-/* #nav-man ul li */
-#header #nav-main ul li {
     position: relative;
-}
-#header li {
-    float: left;
-}
-/* end #nav-man ul li */
-
-/* #nav-man ul li a */
-#header #nav-main ul li.active a {
+  }
+  ul li.active a{
     color: #fff;
-}
-/*when an active item is hovered, displays sub menu*/
-#header #nav-main ul li.active a:hover + .sub-nav{
-    display: block;
-}
-#header #nav-main ul li a.first {
+    &:hover{
+      .sub-nav{
+        display: block;
+      }
+    }
+  }
+  ul li a.first{
     border-left: none;
-}
-.bg-brand, #header #nav-main ul li.active a {
-    background: #005BBB;
-}
-#header #nav-main ul li a {
+  }
+  ul li a{
     color: #333333;
     border-left: 1px solid #e4e5e6;
     border-right: 1px solid #b9bbbd;
@@ -111,6 +97,20 @@ ul, dl {
     line-height: 30px;
     text-decoration: none;
     padding: 0 15px;
+  }
+}
+
+/* #nav-man ul li */
+
+#header li {
+    float: left;
+}
+/* end #nav-man ul li */
+
+/* #nav-man ul li a */
+/*when an active item is hovered, displays sub menu*/
+.bg-brand, #header #nav-main ul li.active a {
+    background: #005BBB;
 }
 .rounded-tl {
     -moz-border-radius-topleft: 4px;
