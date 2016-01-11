@@ -66,5 +66,12 @@ Please clone this repository and deliver your solutions in an archive format of 
    -https://api.github.com/users/opower/repos?per_page=100
    1. Using this parameter is it possible to get 200 repos returned in one API call? What can you do to have all repos returned
    -Yes, https://api.github.com/users/opower/repos?visibility=all
-   -this i am not sure. I think it's setting the authentification. But was listed as showing list repos.
    1. Create an algorithm to parse out the names returned for all repos
+   assuming ajax and jquery is enabled
+   - var names = [];
+   $.getJSON("https://api.github.com/users/opower/repos?visibility=all").then(function(res){
+     for(var i=0; i<res.length; i++){
+       names.push(response[i].name);
+     }
+     });
+     
